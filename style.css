@@ -1,0 +1,181 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 480px;
+}
+
+.calculator {
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #888;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.input-group {
+    margin-bottom: 22px;
+}
+
+label {
+    display: block;
+    color: #444;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #764ba2;
+}
+
+.tip-options {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tip-btn {
+    flex: 1;
+    min-width: 48px;
+    padding: 11px 8px;
+    background: #f0edff;
+    color: #764ba2;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tip-btn:hover,
+.tip-btn.active {
+    background: #764ba2;
+    color: white;
+}
+
+#calculate-btn {
+    width: 100%;
+    padding: 14px;
+    background: #764ba2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+#calculate-btn:hover {
+    background: #5e3787;
+}
+
+.results {
+    background: #f7f7ff;
+    padding: 22px;
+    border-radius: 12px;
+    margin-top: 28px;
+}
+
+.results h2 {
+    color: #333;
+    font-size: 19px;
+    margin-bottom: 18px;
+}
+
+.result-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 15px;
+    color: #666;
+    font-size: 14px;
+}
+
+.result-row strong {
+    color: #333;
+}
+
+.highlight {
+    border-top: 1px solid #ddd;
+    padding-top: 16px;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: #764ba2;
+}
+
+.highlight strong {
+    color: #764ba2;
+    font-size: 19px;
+}
+
+#reset-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 18px;
+    background: #eeeeff;
+    color: #764ba2;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#reset-btn:hover {
+    background: #dedcff;
+}
+
+#message {
+    text-align: center;
+    color: #e74c3c;
+    font-size: 13px;
+    margin-top: 15px;
+    min-height: 18px;
+}
+
+@media (max-width: 450px) {
+    .calculator {
+        padding: 24px 18px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}
